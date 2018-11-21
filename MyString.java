@@ -14,6 +14,7 @@ public class MyString implements CharSequence{
   }
 
   public char charAt(int index){
+    if ((index < 0) || (index > data.length)) throw new IndexOutOfBoundsException("Index is out of bounds.");
     return data[index];
   }
 
