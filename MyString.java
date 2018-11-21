@@ -23,6 +23,7 @@ public class MyString implements CharSequence{
   }
 
   public CharSequence subSequence(int start, int end){
-    return "";
+    if (end < 0 || end > data.length) || start < 0 || start > end ||) throw new IndexOutOfBoundsException("Index is out of bounds.");
+    if (start == end) return "";
   }
 }
